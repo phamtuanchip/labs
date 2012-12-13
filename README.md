@@ -2,22 +2,22 @@ labs
 3 steps to commit wit GIT
 
 * copy repo to local pc
-git clone https://github.com/phamtuanchip/labs.git
+"git clone https://github.com/phamtuanchip/labs.git"
 
 * start to work 
-cd labs 
+"cd labs" 
 
 * check status 
-git status 
+"git status" 
 
-* update 
-git pull
+* update new code form server
+"git pull"
 
 * push change to git server
 
-git add lab7/Programer.java
-git commit -m "update program class" 
-git push origin master
+"git add lab7/Programer.java"
+"git commit -m "update program class"" 
+"git push origin master"
 
 
 
