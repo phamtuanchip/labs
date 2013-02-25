@@ -1,0 +1,8 @@
+MIDlet-1: fileselect,,fileselect
+MIDlet-Jar-Size: 4388
+MIDlet-Jar-URL: fileSelect.jar
+MIDlet-Name: fileSelect MIDlet Suite
+MIDlet-Vendor: MIDlet Suite Vendor
+MIDlet-Version: 1.0.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.1
