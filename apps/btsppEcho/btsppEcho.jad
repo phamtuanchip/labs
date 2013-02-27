@@ -1,0 +1,10 @@
+MIDlet-Name: btsppEcho
+MIDlet-Version: 0.4.0
+MIDlet-Vendor: Nokia
+MicroEdition-Profile: MIDP-1.0
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Jar-URL: btsppEcho.jar
+MIDlet-Jar-Size: 37091
+MIDlet-Description: JSR-82 Bluetooth MIDlet example using RFCOMM
+MIDlet-Icon: /logo.png
+MIDlet-1: btsppEcho, /logo.png, example.btsppecho.MIDletApplication

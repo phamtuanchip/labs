@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2003 Nokia Corporation.
+
+ THIS SOURCE CODE IS PROVIDED 'AS IS', WITH NO WARRANTIES WHATSOEVER,
+ EXPRESS OR IMPLIED, INCLUDING ANY WARRANTY OF MERCHANTABILITY, FITNESS
+ FOR ANY PARTICULAR PURPOSE, OR ARISING FROM A COURSE OF DEALING, USAGE
+ OR TRADE PRACTICE, RELATING TO THE SOURCE CODE OR ANY WARRANTY OTHERWISE
+ ARISING OUT OF ANY PROPOSAL, SPECIFICATION, OR SAMPLE AND WITH NO
+ OBLIGATION OF NOKIA TO PROVIDE THE LICENSEE WITH ANY MAINTENANCE OR
+ SUPPORT. FURTHERMORE, NOKIA MAKES NO WARRANTY THAT EXERCISE OF THE
+ RIGHTS GRANTED HEREUNDER DOES NOT INFRINGE OR MAY NOT CAUSE INFRINGEMENT
+ OF ANY PATENT OR OTHER INTELLECTUAL PROPERTY RIGHTS OWNED OR CONTROLLED
+ BY THIRD PARTIES
+
+ Furthermore, information provided in this source code is preliminary,
+ and may be changed substantially prior to final release. Nokia Corporation
+ retains the right to make changes to this source code at
+ any time, without notice. This source code is provided for informational
+ purposes only.
+
+ Nokia and Nokia Connecting People are registered trademarks of Nokia
+ Corporation.
+ Java and all Java-based marks are trademarks or registered trademarks of
+ Sun Microsystems, Inc.
+ Other product and company names mentioned herein may be trademarks or
+ trade names of their respective owners.
+
+ A non-exclusive, non-transferable, worldwide, limited license is hereby
+ granted to the Licensee to download, print, reproduce and modify the
+ source code. The licensee has the right to market, sell, distribute and
+ make available the source code in original or modified form only when
+ incorporated into the programs developed by the Licensee. No other
+ license, express or implied, by estoppel or otherwise, to any other
+ intellectual property rights is granted herein. -->
+
+<!--
+  This ant build file is meant to be used with Ant version 1.5.3 or higher
+  It also uses the MIDP oriented tasks found in the antenna project.
+  It is necessary to download antenna from http://antenna.sourceforge.net
+  version 0.9.10 or higher. Copy antenna-bin.jar to Ant's lib directory
+-->
+
+<project name="btl2capEcho" default="build" basedir=".">
+  <description>
+      Build file for the btl2capEcho MIDlet
+  </description>
+
+  <!-- set your custom properties in build.properties -->
+  <property file="build.properties"/>
+  <property file="../build.properties"/>
+  <property file="../../build.properties"/>
+  <property file="${user.home}/build.properties"/>
+
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="classes" location="classes"/>
+  <property name="dist" location="."/>
+  <property name="res" location="res"/>
+  <!--
+    The emulator should support the JSR-82 Bluetooth api
+    For example the Series 60 MIDP Concept Emulator Beta 0.3
+  -->
+  <property name="wtk.home" value="C:\Nokia\Devices\Series_60_MIDP_Concept_SDK_Beta_0_3_1_Nokia_edition"/>
+  <property name="wtk.midpapi" value="${wtk.home}\lib\classes.zip"/>
+  <property name="name.jar" value="${ant.project.name}.jar"/>
+  <property name="name.jad" value="${ant.project.name}.jad"/>
+
+  <path id="bluetooth.classpath">
+    <pathelement location="${wtk.midpapi}"/>
+    <pathelement location="${wtk.home}/lib/ext/bluetooth.zip"/>
+  </path>
+
+
+  <!-- Define two antenna tasks -->
+  <taskdef name="wtkbuild" classname="de.pleumann.antenna.WtkBuild"/>
+  <taskdef name="wtkpackage" classname="de.pleumann.antenna.WtkPackage"/>
+
+  <!--
+    Prints out configuration information
+  -->
+  <target name="info" description="Prints some basic build info">
+    <echo>Build file for the ${ant.project.name} MIDlet</echo>
+    <echo>Using WTK home as ${wtk.home}</echo>
+    <echo>Using MIDP api file as ${wtk.midpapi}</echo>
+  </target>
+
+  <!--
+    Init tasks set ups the basic directory structure
+  -->
+  <target name="init" depends="info" description="Creates basic directories">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${classes}"/>
+    <mkdir dir="${dist}"/>
+  </target>
+
+  <!--
+    Compile tasks builds the source code
+  -->
+  <target name="compile" depends="init" description="Compiles the source">
+    <!-- Compile the java code from ${src} into ${build} -->
+    <wtkbuild srcdir="${src}" destdir="${classes}" deprecation="on" target="1.2" classpathref="bluetooth.classpath"/>
+  </target>
+
+  <!--
+    Build task build the jar file
+  -->
+  <target name="build" depends="compile" description="Build the MIDlet jar file">
+    <!-- package the classes and update the jad file-->
+    <wtkpackage jarfile="${dist}/${name.jar}" jadfile="${dist}/${name.jad}" preverify="false">
+      <fileset dir="${classes}" includes="**/*.class"/>
+      <fileset dir="${res}" includes="**"/>
+    </wtkpackage>
+  </target>
+
+  <!--
+    Cleans directories
+  -->
+  <target name="clean" description="Clean up">
+    <!-- Delete the ${classes} directory tree -->
+    <delete dir="${classes}"/>
+  </target>
+
+  <!--
+    Do a clean build
+  -->
+  <target name="cleanbuild" depends="clean, build" description="Cleans and builds"/>
+
+  <!--
+    Test if the necessary classes or files are in place
+  -->
+  <target name="validate" depends="info" description="Tests whether the project can be built">
+    <!-- Detect if the MIDP and multimedia API are available -->
+    <condition property="buildable">
+      <and>
+        <available classname="javax.microedition.midlet.MIDlet" classpath="${wtk.midpapi}"/>
+        <available classname="javax.bluetooth.LocalDevice" classpathref="bluetooth.classpath"/>
+      </and>
+    </condition>
+    <antcall target="failure"/>
+    <antcall target="success"/>
+  </target>
+
+  <target name="failure" unless="buildable">
+    <echo>Either MIDP or JSR-82 Bluetooth API not available</echo>
+  </target>
+
+  <target name="success" if="buildable">
+    <echo>MIDlet ${ant.project.name} can be built</echo>
+  </target>
+
+</project>
