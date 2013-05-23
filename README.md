@@ -1,4 +1,6 @@
-labs
+
+This is labs repository for practical and example in MTECH 
+
 3 steps to commit wit GIT
 
 * copy repo to local pc
