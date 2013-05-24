@@ -1,0 +1,4 @@
+- setup TC or blooded c++
+- seting enviroment to point to gcc
+- run gcc filename.c -o executefile 
+- call executefile 
