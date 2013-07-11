@@ -7,7 +7,8 @@ lib-cov
 *.pid
 *.gz
 *.class
-
+*.classpath
+*.project
 pids
 logs
 results
