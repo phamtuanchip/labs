@@ -12,15 +12,15 @@ public class Customer {
 	
 	public void AccepInformation(){
 		System.out.print("Customer name: ");
-		name = new Scanner(System.in).next();
+		name = new Scanner(System.in).nextLine();
 		System.out.print("\n Date of birth: ");
-		dob = new Scanner(System.in).next();
+		dob = new Scanner(System.in).nextLine();
 		System.out.print("\n Adress: ");
-		address = new Scanner(System.in).next();
+		address = new Scanner(System.in).nextLine();
 		System.out.print("\n Email: ");
-		email = new Scanner(System.in).next();
+		email = new Scanner(System.in).nextLine();
 		System.out.print("\n phone: ");
-		phone = new Scanner(System.in).next();
+		phone = new Scanner(System.in).nextLine();
 	}
 	
 	public void DisplayInformation(){
