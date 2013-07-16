@@ -14,26 +14,26 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+package pkg2;
 
 /**
  * Created by The eXo Platform SAS
  * Author : eXoPlatform
  *          exo@exoplatform.com
- * Jul 15, 2013  
+ * Jul 16, 2013  
  */
-public class Run {
+public class Class2 {
   
-  public static void main(String[] args){
-   
-    
-    Xe x = new Xe();
-    x.displayInformation();
-    
-    x = new Xe("Xe co", 2, 100, 130);
-    x.displayInformation();
-    
-    
-    
-  }
+  protected String name ;
+  public int age ;
+  int id ;
+  
+  private String color ;
 
+  public class InerClass1{
+    public void inerFunciton(){
+      Class2 c = new Class2();
+      System.out.println("I can get all except private " + c.color );
+    }
+  }
 }

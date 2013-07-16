@@ -1,3 +1,5 @@
+import java.util.Date;
+
 /*
  * Copyright (C) 2003-2013 eXo Platform SAS.
  *
@@ -19,21 +21,30 @@
  * Created by The eXo Platform SAS
  * Author : eXoPlatform
  *          exo@exoplatform.com
- * Jul 15, 2013  
+ * Jul 16, 2013  
  */
-public class Run {
+public abstract class Employee implements Human {
   
-  public static void main(String[] args){
+  String id = "";
+  String name = "" ;
+  Date dob = null;
+  short age = 0; 
+  String address = "";
+  
+   double baseSalary;
+   double bonus;
+   double tax;
    
-    
-    Xe x = new Xe();
-    x.displayInformation();
-    
-    x = new Xe("Xe co", 2, 100, 130);
-    x.displayInformation();
-    
-    
-    
-  }
+   
+   double getSalary() {
+     return baseSalary + bonus - tax ;
+   }
+   
+   abstract double getBonusBylevel() ;
+   
+   
+   
+  
+  
 
 }

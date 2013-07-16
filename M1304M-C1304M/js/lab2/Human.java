@@ -1,3 +1,6 @@
+import java.util.Date;
+
+
 /*
  * Copyright (C) 2003-2013 eXo Platform SAS.
  *
@@ -19,21 +22,22 @@
  * Created by The eXo Platform SAS
  * Author : eXoPlatform
  *          exo@exoplatform.com
- * Jul 15, 2013  
+ * Jul 16, 2013  
  */
-public class Run {
+public interface Human {
+ 
   
-  public static void main(String[] args){
-   
-    
-    Xe x = new Xe();
-    x.displayInformation();
-    
-    x = new Xe("Xe co", 2, 100, 130);
-    x.displayInformation();
-    
-    
-    
-  }
-
+  String getId();
+  String getName();
+  String getAddress();
+  short getAge();
+  Date getDOB();
+  
+  void setId(String id);
+  void setName(String name);
+  void setAddress(String address);
+  void setDOB(Date d);
+  
+  
+  
 }

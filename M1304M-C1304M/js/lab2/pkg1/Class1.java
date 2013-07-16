@@ -14,25 +14,26 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
+package pkg1;
+
+import pkg2.Class2;
 
 /**
  * Created by The eXo Platform SAS
  * Author : eXoPlatform
  *          exo@exoplatform.com
- * Jul 15, 2013  
+ * Jul 16, 2013  
  */
-public class Run {
-  
-  public static void main(String[] args){
-   
-    
-    Xe x = new Xe();
-    x.displayInformation();
-    
-    x = new Xe("Xe co", 2, 100, 130);
-    x.displayInformation();
-    
-    
+public class Class1 {
+
+  /**
+   * @param args
+   */
+  public static void main(String[] args) {
+    // TODO Auto-generated method stub
+
+    Class2 c = new Class2() ;
+    System.out.println("I can get public and defaule value: " + c.age);
     
   }
 
