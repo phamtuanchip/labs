@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2003-2013 eXo Platform SAS.
+  * Copyright (C) 2003-2013 eXo Platform SAS.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as published by
@@ -29,6 +29,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.util.EventListener;
 
 /**
  * Created by The eXo Platform SAS
@@ -36,7 +37,7 @@ import java.awt.event.WindowListener;
  *          exo@exoplatform.com
  * Jul 18, 2013  
  */
-public class UI extends Frame{
+public class UI extends Frame implements EventListener{
 
 
   void createWindow() {
