@@ -15,7 +15,7 @@ public class GridbagLayoutSimple extends Frame {
     
     GridbagLayoutSimple simple = new GridbagLayoutSimple() ;
     GridBagLayout gb = new GridBagLayout() ;
-    simple.get
+     
     //simple.setAlwaysOnTop
     simple.setSize(500, 500) ;
     simple.setVisible(true) ;

@@ -90,7 +90,7 @@ public class Manager extends Employee {
   @Override
   double getSalary() {
     // TODO Auto-generated method stub
-    return super.getSalary() + getBonusBylevel();
+    return super.getSalary();
   }
   
   
