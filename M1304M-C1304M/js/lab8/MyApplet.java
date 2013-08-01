@@ -1,5 +1,5 @@
 
-package lab7;
+package lab8;
 import java.awt.*;
 import java.applet.*;
 public class MyApplet extends Applet implements Runnable

@@ -1,4 +1,4 @@
-package lab7;
+package lab8;
 
 class ChopStick
 {
