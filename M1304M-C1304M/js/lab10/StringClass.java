@@ -34,7 +34,21 @@ public class StringClass {
       System.out.println("La 1");
     }
       
-     
+    String s3 = new String("chuoi") ;
+    
+    if("chuoi" == s3 && s2 == s3 && s1==s3) {
+      System.out.println("La 1 nua !");
+    } else {
+      System.out.println("La moi !");
+    }
+    
+    s3 = s3.intern();
+    
+    if("chuoi" == s3 && s2 == s3 && s1==s3) {
+      System.out.println("La 1 nua sau khi goi inturn() !");
+    } else {
+      System.out.println("La moi !");
+    }
     
   }
 
