@@ -21,8 +21,12 @@
 		for ( counter=1; counter <= 10; counter++)
 		{
 			my_record.x= counter;
-			fwrite(&my_record, sizeof(struct rec), 1, ptr_myfile);
+			my_record.y= counter +1;
+			my_record.z= counter  + 2;
+			fwrite(&my_record, sizeof(struct rec), 3, ptr_myfile);
 		}
+		
+		
 		fclose(ptr_myfile);
 		return 0;
 	}

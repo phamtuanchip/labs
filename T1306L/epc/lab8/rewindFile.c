@@ -24,9 +24,12 @@
 
 		for ( counter=1; counter <= 10; counter++)
 		{
-			fread(&my_record,sizeof(struct rec),1,ptr_myfile);
+			fread(&my_record,sizeof(struct rec),3,ptr_myfile);
 			printf("%d\n",my_record.x);
+			printf("%d\n",my_record.y);
+		    printf("%d\n",my_record.z);
 		}
 		fclose(ptr_myfile);
+		getchar();
 		return 0;
 	}
