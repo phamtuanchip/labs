@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
- int people_count;
+ int people_count, numberOfStructFields = 3;
 struct Person 
 {
     char f_name[256];
@@ -19,7 +19,7 @@ void readStruct(){
 
     struct Person* people;
     people = malloc(sizeof(*people)*people_count);
-    fread(people, sizeof(struct Person) * 1/* Just read one person */, 3, data);
+    fread(people, sizeof(struct Person) * people_count/* Just read one person */, numberOfStructFields, data);
      int n;
     for (n = 0; n < people_count; n++)
     {
@@ -61,7 +61,7 @@ void writeStruct()
         
     }
 
-    fwrite(people, sizeof(struct Person) * people_count, 3, data);
+    fwrite(people, sizeof(struct Person) * people_count, numberOfStructFields, data);
     free(people);
     fclose(data);
     getchar();
