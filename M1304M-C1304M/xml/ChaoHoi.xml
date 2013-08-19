@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="ChaoHoi.css"?>
+<!DOCTYPE ChaoHoi SYSTEM "ChaoHoi.dtd">
+<ChaoHoi>
+     <Chao>Chao ban</Chao>
+     <Hoi>Ban co khoe khong?</Hoi>
+</ChaoHoi>

@@ -1,0 +1,3 @@
+<!ELEMENT ChaoHoi (Chao,Hoi)>
+<!ELEMENT Chao (#PCDATA)>
+<!ELEMENT Hoi (#PCDATA)>
