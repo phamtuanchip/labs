@@ -32,6 +32,7 @@ class RandomAccessFileDemo
         String s = f1.readLine();
         System.out.println(s);
         fp = f1.getFilePointer();
+         System.out.println("fp" + fp);
       }
     }
     catch(IOException e)

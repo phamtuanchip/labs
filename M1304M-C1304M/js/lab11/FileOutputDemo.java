@@ -26,7 +26,7 @@ class FileOutputDemo
     {
       System.out.println("Enter a line to be saved into a file");
           int bytes = System.in.read(b);
-      FileOutputStream fos = new FileOutputStream("xyz.txt");
+      FileOutputStream fos = new FileOutputStream("xyz.txt", true);
        
     fos.write(b,0,bytes);
       System.out.println("Written!");

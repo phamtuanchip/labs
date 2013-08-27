@@ -47,6 +47,7 @@ class SerializationDemo {
       ObjectInputStream in1 = new ObjectInputStream(fis);
       test = (TestClass)in1.readObject();
       in1.close();
+      System.out.println(test.toString());
     }
     catch(Exception e)
     {
