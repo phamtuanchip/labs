@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ChaoHoi.css"?>
+<!DOCTYPE ChaoHoi [
+<!ELEMENT ChaoHoi (Hoi,TraLoi)>
+<!ELEMENT Hoi (#PCDATA)>
+<!ELEMENT TraLoi (#PCDATA)>
+<!ATTLIST Hoi tieng CDATA #IMPLIED>
+<!ENTITY QueHuong SYSTEM "que.txt">
+]>
+<ChaoHoi>
+  <Hoi tieng="Viet nam">
+    Chao ban.Ban den tu &QueHuong; phai khong?  
+  </Hoi>
+  <TraLoi>
+    Vang, toi den tu &QueHuong; de hoc &quot;XML by Example&quot;.   
+  </TraLoi>
+</ChaoHoi>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="ChaoHoi.css"?>
+<!DOCTYPE Mobile [
+<!ELEMENT Mobile (Company, Model, Price+, Accessories)>
+<!ELEMENT Company (#PCDATA)>
+<!ELEMENT Model (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT Accessories (#PCDATA)>
+<!ATTLIST Model Type CDATA "Camera">
+<!ENTITY HP "Head Phones">
+<!ENTITY CH "Charger">
+<!ENTITY SK "Starters Kit">
+]>
+
+<Mobile>
+ <Company> Nokia </Company>
+ <Model Type ="Camera"> 6600 </Model>
+ <Accessories> &HP;, &CH; and a &SK;</Accessories>
+ 
+ <Company> Window phone </Company>
+ <Model Type ="Camera"> 6600 </Model>
+ <Accessories> &HP;, &CH; and a &SK;</Accessories>
+</Mobile>
