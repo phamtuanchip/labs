@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="congty.xsl"?>
+<CongTy>
+   <NhanVien>
+       <HoTen>Tran Thu</HoTen>
+       <DiaChi>17 Ngo Quyen</DiaChi>
+   </NhanVien>
+   <NhanVien>
+       <HoTen>Nguyen Hung</HoTen>
+       <DiaChi>33 Hoang Van Thu</DiaChi>
+   </NhanVien>
+   <NhanVien>
+       <HoTen>Bao Chung</HoTen>
+       <DiaChi>25 Tran Nhan Tong</DiaChi>
+   </NhanVien>
+   <GiamDoc>
+       <HoTen>Hoang Giam Doc</HoTen>
+   </GiamDoc>
+  </CongTy>

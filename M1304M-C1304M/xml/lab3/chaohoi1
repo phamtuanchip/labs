@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ChaoHoi.css"?>
+<!DOCTYPE ChaoHoi [
+<!ELEMENT ChaoHoi (Chao,Hoi)>
+<!ELEMENT Chao (#PCDATA)>
+<!ELEMENT Hoi (#PCDATA)>
+<!ENTITY DN "Dong nai">
+]>
+<ChaoHoi>
+    <Chao> Chao ban.Ban den tu &DN; phai khong? </Chao>
+    <TraLoi>Vang, toi den tu &DN; de hoc &quot;XML by Example&quot;.</TraLoi>
+</ChaoHoi>
