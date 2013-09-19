@@ -1,3 +1,4 @@
+package lab1;
 import javax.microedition.lcdui.*;
 import javax.microedition.midlet.*;
 
