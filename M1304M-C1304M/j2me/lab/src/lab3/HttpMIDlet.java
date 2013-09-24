@@ -1,4 +1,4 @@
-package lab2;
+package lab3;
 
 
 import java.io.InputStream;
@@ -160,7 +160,7 @@ public class HttpMIDlet extends MIDlet
 
         // The address form
         addressForm = new Form("HTTP Client");
-        serverURL = new TextField("URL:", "", 256, TextField.ANY);
+        serverURL = new TextField("URL:", "", 256, TextField.URL);
         addressForm.append(serverURL);
         addressForm.addCommand(okCommand);
         addressForm.addCommand(exitCommand);

@@ -1,12 +1,13 @@
-MIDlet-1: ReadWrite,,lab2.ReadWrite
-MIDlet-2: ReadWriteStreams,,lab2.ReadWriteStreams
-MIDlet-3: SearchExample,,lab2.SearchExample
-MIDlet-4: SortExample,,lab2.SortExample
-MIDlet-5: SortMixedRecordDataTypeExample,,lab2.SortMixedRecordDataTypeExample
 MIDlet-6: HttpMIDle,,lab2.HttpMIDle
+MIDlet-5: SortMixedRecordDataTypeExample,,lab2.SortMixedRecordDataTypeExample
+MIDlet-4: SortExample,,lab2.SortExample
+MIDlet-3: SearchExample,,lab2.SearchExample
+MIDlet-2: ReadWriteStreams,,lab2.ReadWriteStreams
+MIDlet-1: ReadWrite,,lab2.ReadWrite
 MIDlet-Jar-URL: lab.jar
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 1.0.0
 MIDlet-Name: lab MIDlet Suite
 MIDlet-Vendor: MIDlet Suite Vendor
-MIDlet-Version: 1.0.0
-MicroEdition-Configuration: CLDC-1.1
 MicroEdition-Profile: MIDP-2.1
+MIDlet-7: MIDlet-7,,lab3.AccessUrl

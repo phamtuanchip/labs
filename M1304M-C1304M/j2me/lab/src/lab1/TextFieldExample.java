@@ -7,23 +7,35 @@ public class TextFieldExample extends MIDlet implements CommandListener{
 	private Display display;
 	private TextField name, company;
 	private Command ok;
+	private Command back;
+	private Command exit;
 	
 	public TextFieldExample(){
-		name = new TextField("Name:", "", 30, TextField.ANY);
-		company = new TextField("Company Name:", "", 30, TextField.ANY);
-		ok = new Command("OK", Command.OK, 2);
+		
+		ok = new Command("Signin", Command.OK, 2);
+		back = new Command("Back", Command.BACK, 1);
+		exit = new Command("exit", Command.EXIT, 0);
+		
 	}
 
 	public void startApp(){
+		
+		initForm();
+	}
+	
+	void initForm(){
 		display = Display.getDisplay(this);
 		Form form = new Form("Text Field");
+		name = new TextField("id:", "", 30, TextField.ANY);
+		company = new TextField("pass:", "", 30, TextField.PASSWORD);
 		form.append(name);
 		form.append(company);
+		form.addCommand(exit);
+		
 		form.addCommand(ok);
 		form.setCommandListener(this);
 		display.setCurrent(form);
 	}
-
 	public void pauseApp(){
 	
 	}
@@ -39,14 +51,19 @@ public class TextFieldExample extends MIDlet implements CommandListener{
 		Form form = new Form("Input Value");
 		form.append(n);
 		form.append(c);
+		form.addCommand(back);
+		form.setCommandListener(this);
 		display.setCurrent(form);
 	}
 
 
 	public void commandAction(Command c, Displayable d) {
 		String label = c.getLabel();
-		if(label.equals("OK")){
+		int cType = c.getCommandType();
+		if(cType == Command.OK){
 			showInput();
-		} 
+		} else if (c.getCommandType() == Command.BACK){
+			initForm();
+		}  
 	}
 }

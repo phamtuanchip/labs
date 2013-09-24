@@ -1,10 +1,18 @@
 package lab3;
 
-import javax.microedition.midlet.*;
-import javax.microedition.lcdui.*;
-import javax.microedition.rms.*;
-import javax.microedition.io.*;
-import java.io.*;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import javax.microedition.io.Connector;
+import javax.microedition.io.HttpConnection;
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.midlet.MIDlet;
+import javax.microedition.rms.RecordStore;
   
 public class CookieMIDlet extends MIDlet implements CommandListener{
 	private Display display;
@@ -13,7 +21,7 @@ public class CookieMIDlet extends MIDlet implements CommandListener{
 	private String cookie = null;
 	private RecordStore rs = null;  
 	static final String REC_STORE = "CookieMIDlet";
-	private String url = "http://localhost:8080/J2MEServlet/J2MEServletExample";
+	private String url = "http://localhost:8080/J2MEServlet/";
 
 	public void startApp(){
 		display = Display.getDisplay(this);
@@ -108,6 +116,8 @@ public class CookieMIDlet extends MIDlet implements CommandListener{
 					}
 					form.append("Last access:\n" + str + "\n");                   
 				}
+			} else {
+				System.out.println("Response code : " + con.getResponseCode());      
 			}
 		}finally{
 			if(is != null){
