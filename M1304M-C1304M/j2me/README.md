@@ -8,5 +8,11 @@ ref link
 http://www.roseindia.net/j2me/index.shtml
 http://www.j2mesalsa.com/elearning/
 
+http://www.java2s.com/Tutorial/Java/0430__J2ME/Catalog0430__J2ME.htm
+
 book ref link
 http://book.javanb.com/wireless-java-developing-with-j2me/index.html
+
+good example link 
+http://koti.mbnet.fi/niclasw/midlets.html
+
