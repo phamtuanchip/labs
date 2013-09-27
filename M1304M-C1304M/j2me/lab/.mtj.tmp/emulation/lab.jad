@@ -5,7 +5,7 @@ MIDlet-4: SortExample,,lab2.SortExample
 MIDlet-5: SortMixedRecordDataTypeExample,,lab2.SortMixedRecordDataTypeExample
 MIDlet-6: HttpMIDle,,lab2.HttpMIDle
 MIDlet-7: MIDlet-7,,lab3.AccessUrl
-MIDlet-Jar-Size: 69547
+MIDlet-Jar-Size: 69531
 MIDlet-Jar-URL: lab.jar
 MIDlet-Name: lab MIDlet Suite
 MIDlet-Vendor: MIDlet Suite Vendor

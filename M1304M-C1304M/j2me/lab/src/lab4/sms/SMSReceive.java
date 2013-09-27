@@ -29,7 +29,7 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package example.sms;
+package lab4.sms;
 
 import java.io.IOException;
 
@@ -149,6 +149,7 @@ public class SMSReceive extends MIDlet implements CommandListener, Runnable, Mes
      * @param conn the connection with messages available
      */
     public void notifyIncomingMessage(MessageConnection conn) {
+    	System.out.println("you have new message!");
         if (thread == null) {
             done = false;
             thread = new Thread(this);

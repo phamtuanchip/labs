@@ -1,3 +1,5 @@
+package lab4;
+
 import javax.microedition.midlet.*;
 import javax.microedition.io.*;
 import javax.microedition.lcdui.*;
@@ -128,3 +130,18 @@ content.setString(((TextMessage)msg).getPayloadText());
 StringBuffer buf = new StringBuffer();
 byte[] data = ((BinaryMessage)msg).getPayloadData();
 for (int i = 0; i < data.length; i++) { int intData = (int)data & 0xFF; if (intData < 0x10) { buf.append("0"); } buf.append(Integer.toHexString(intData)); buf.append(' '); } content.setString(buf.toString()); } content.addCommand(replyCommand); display.setCurrent(content); } } catch (IOException e) { // e.printStackTrace(); } } /** * Pause signals the thread to stop by clearing the thread field. * If stopped before done with the iterations it will * be restarted from scratch later. */ public void pauseApp() { done = true; thread = null; resumeScreen = display.getCurrent(); } /** * Destroy must cleanup everything. The thread is signaled * to stop and no result is produced. * @param unconditional true if a forced shutdown was requested */ public void destroyApp(boolean unconditional) { done = true; thread = null; if (smsconn != null) { try { smsconn.close(); } catch (IOException e) { // Ignore any errors on shutdown } } } /** * Respond to commands, including exit * @param c user interface command requested * @param s screen object initiating the request */ public void commandAction(Command c, Displayable s) { try { if (c == exitCommand || c == Alert.DISMISS_COMMAND) { destroyApp(false); notifyDestroyed(); } else if (c == replyCommand) { reply(); } } catch (Exception ex) { ex.printStackTrace(); } } /** * Allow the user to reply to the received message */ private void reply() { // remove the leading "sms://" for diplaying the destination address String address = senderAddress.substring(6); String statusMessage = "Sending message to " + address + "..."; sendingMessageAlert.setString(statusMessage); sender.promptAndSend(senderAddress); } }
+
+protected void destroyApp(boolean arg0) throws MIDletStateChangeException {
+	// TODO Auto-generated method stub
+	
+}
+
+protected void pauseApp() {
+	// TODO Auto-generated method stub
+	
+}
+
+public void commandAction(Command c, Displayable d) {
+	// TODO Auto-generated method stub
+	
+}

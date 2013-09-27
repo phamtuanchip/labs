@@ -29,15 +29,17 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package example.sms;
+package lab4.sms;
 
-import java.io.IOException;
-
-import javax.microedition.io.*;
-import javax.microedition.lcdui.*;
-import javax.microedition.midlet.*;
-
-import javax.wireless.messaging.*;
+import javax.microedition.lcdui.Alert;
+import javax.microedition.lcdui.AlertType;
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.TextBox;
+import javax.microedition.lcdui.TextField;
+import javax.microedition.midlet.MIDlet;
 
 
 /**

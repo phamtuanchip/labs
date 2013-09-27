@@ -1,7 +1,17 @@
-import javax.microedition.io.*;
-import javax.microedition.lcdui.*;
+package lab4;
+
+import javax.microedition.io.Connector;
+import javax.microedition.lcdui.Alert;
+import javax.microedition.lcdui.AlertType;
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.TextField;
 import javax.microedition.midlet.MIDlet;
-import javax.wireless.messaging.*;
+import javax.wireless.messaging.MessageConnection;
+import javax.wireless.messaging.TextMessage;
 public class SendSms2 extends MIDlet implements CommandListener {
       Display display;
       private TextField toWhom;

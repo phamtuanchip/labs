@@ -1,3 +1,5 @@
+package lab5;
+
 import java.lang.*;
 import java.io.*;
 import java.util.*;

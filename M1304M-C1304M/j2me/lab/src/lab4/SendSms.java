@@ -1,17 +1,34 @@
+package lab4;
+
 /*
 * To change this template, choose Tools | Templates
 * and open the template in the editor.
 */
 
-import java.io.*;
-import javax.microedition.io.*;
-import javax.microedition.lcdui.*;
-import javax.microedition.midlet.*;
+import java.io.IOException;
+import java.io.InputStream;
+
+import javax.microedition.io.Connector;
+import javax.microedition.io.HttpConnection;
+import javax.microedition.lcdui.Alert;
+import javax.microedition.lcdui.AlertType;
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.Item;
+import javax.microedition.lcdui.ItemCommandListener;
+import javax.microedition.lcdui.StringItem;
+import javax.microedition.lcdui.TextField;
+import javax.microedition.midlet.MIDlet;
+import javax.wireless.messaging.MessageConnection;
+import javax.wireless.messaging.MessageListener;
 
 /**
 * @author administrator
 */
-public class SendSms extends MIDlet implements CommandListener, ItemCommandListener {
+public class SendSms extends MIDlet implements CommandListener, ItemCommandListener,MessageListener {
       private Display display;
       private Form composeSms;
       private TextField toWhom;
@@ -58,6 +75,7 @@ public class SendSms extends MIDlet implements CommandListener, ItemCommandListe
             } else {
                   Display.getDisplay(this).setCurrent(current);
             }
+            
       }
 
       public void pauseApp() {
@@ -172,4 +190,9 @@ public class SendSms extends MIDlet implements CommandListener, ItemCommandListe
                   }
             }
       }
+
+	public void notifyIncomingMessage(MessageConnection arg0) {
+		 
+		System.out.println("you have new mesasge");
+	}
 }

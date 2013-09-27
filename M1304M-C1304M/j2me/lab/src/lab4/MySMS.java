@@ -1,4 +1,4 @@
-package anuja;
+package lab4;
 
 import java.io.IOException;
 import javax.microedition.io.Connector;

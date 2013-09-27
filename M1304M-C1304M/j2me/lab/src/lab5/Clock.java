@@ -1,3 +1,5 @@
+package lab5;
+
 /**
  * Digi clock sample with stop watch feature. Works in any MIDP 1.0 devide (in theory). Tested with N95 and N78 at least.
  * @ersion 0.2

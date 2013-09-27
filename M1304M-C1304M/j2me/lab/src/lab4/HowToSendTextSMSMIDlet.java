@@ -1,4 +1,4 @@
-package com.forumnokia.wiki.samples;
+package lab4;
 
 import javax.microedition.io.Connector;
 import javax.microedition.lcdui.Command;
