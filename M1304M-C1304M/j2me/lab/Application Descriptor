@@ -1,4 +1,5 @@
 MIDlet-6: HttpMIDle,,lab2.HttpMIDle
+CBS-Message-Identifier: 50001
 MIDlet-5: SortMixedRecordDataTypeExample,,lab2.SortMixedRecordDataTypeExample
 MIDlet-4: SortExample,,lab2.SortExample
 MIDlet-3: SearchExample,,lab2.SearchExample
@@ -10,4 +11,6 @@ MIDlet-Version: 1.0.0
 MIDlet-Name: lab MIDlet Suite
 MIDlet-Vendor: MIDlet Suite Vendor
 MicroEdition-Profile: MIDP-2.1
+MMS-ApplicationID: example.mms.MMSDemo
 MIDlet-7: MIDlet-7,,lab3.AccessUrl
+SMS-Port: 50000

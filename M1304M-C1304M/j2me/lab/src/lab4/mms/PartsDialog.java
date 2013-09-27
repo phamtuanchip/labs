@@ -33,9 +33,15 @@ package lab4.mms;
 
 import java.io.InputStream;
 
-import javax.microedition.lcdui.*;
-
-import javax.wireless.messaging.*;
+import javax.microedition.lcdui.Choice;
+import javax.microedition.lcdui.ChoiceGroup;
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.List;
+import javax.microedition.lcdui.TextField;
+import javax.wireless.messaging.MessagePart;
 
 
 public class PartsDialog implements CommandListener {

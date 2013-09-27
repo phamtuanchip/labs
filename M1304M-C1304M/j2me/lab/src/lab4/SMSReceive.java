@@ -38,7 +38,7 @@ String senderAddress;
 /** Alert that is displayed when replying */
 Alert sendingMessageAlert;
 /** Prompts for and sends the text reply */
-SMSSender sender;
+Sender sender;
 /** The screen to display when we return from being paused */
 Displayable resumeScreen;
 

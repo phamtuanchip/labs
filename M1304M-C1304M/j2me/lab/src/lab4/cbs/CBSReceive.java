@@ -33,11 +33,20 @@ package lab4.cbs;
 
 import java.io.IOException;
 
-import javax.microedition.io.*;
-import javax.microedition.lcdui.*;
-import javax.microedition.midlet.*;
-
-import javax.wireless.messaging.*;
+import javax.microedition.io.Connector;
+import javax.microedition.io.PushRegistry;
+import javax.microedition.lcdui.Alert;
+import javax.microedition.lcdui.AlertType;
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.midlet.MIDlet;
+import javax.wireless.messaging.BinaryMessage;
+import javax.wireless.messaging.Message;
+import javax.wireless.messaging.MessageConnection;
+import javax.wireless.messaging.MessageListener;
+import javax.wireless.messaging.TextMessage;
 
 
 /**

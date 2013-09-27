@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mtjMetadata jad="lab.jad" version="1.0.0.v200906121354">
-   <device group="Sun Java(TM) Wireless Toolkit 2.5.2_01 for CLDC" name="MediaControlSkin"/>
+<mtjMetadata jad="lab.jad" version="1.2.1.v201009031435">
+   <device group="Sun Java(TM) Wireless Toolkit 2.5.2_01 for CLDC" name="DefaultColorPhone"/>
    <signing projectSpecific="false" signProject="false">
       <alias/>
    </signing>
    <configurations>
-      <configuration active="true" name="MediaControlSkin">
-         <device group="Sun Java(TM) Wireless Toolkit 2.5.2_01 for CLDC" name="MediaControlSkin"/>
-         <symbolSet name="MediaControlSkin">
+      <configuration active="true" name="DefaultColorPhone">
+         <device group="Sun Java(TM) Wireless Toolkit 2.5.2_01 for CLDC" name="DefaultColorPhone"/>
+         <symbolSet name="DefaultColorPhone">
             <symbol name="screen.isColor" value="true"/>
             <symbol name="MMAPI" value="1.1"/>
             <symbol name="screen.bitDepth" value="8"/>
@@ -21,10 +21,10 @@
             <symbol name="WMA" value="2.0"/>
             <symbol name="SATSA-JCRMI" value="1.0"/>
             <symbol name="J2ME-WS" value="1.0"/>
-            <symbol name="screen.width" value="180"/>
+            <symbol name="screen.width" value="240"/>
             <symbol name="JSR238" value="1.0"/>
-            <symbol name="screen.isTouch" value="false"/>
             <symbol name="JSR239" value="1.0"/>
+            <symbol name="screen.isTouch" value="false"/>
             <symbol name="JSR211" value="1.0"/>
             <symbol name="JSR234" value="1.0"/>
             <symbol name="SATSA-APDU" value="1.0"/>
@@ -35,7 +35,7 @@
             <symbol name="version.configuration" value="CLDC-1.1"/>
             <symbol name="version.profile" value="MIDP-2.1"/>
             <symbol name="JSR180" value="1.0"/>
-            <symbol name="screen.height" value="208"/>
+            <symbol name="screen.height" value="320"/>
          </symbolSet>
       </configuration>
    </configurations>

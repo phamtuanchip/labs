@@ -8,10 +8,13 @@ package lab5;
  * License: free: use and modify as you like as long as you don't hold the author responsible for anything
  */
 
-import javax.microedition.midlet.MIDlet;
-import javax.microedition.lcdui.*;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import javax.microedition.lcdui.Canvas;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Graphics;
+import javax.microedition.midlet.MIDlet;
 
 
 class Color 
