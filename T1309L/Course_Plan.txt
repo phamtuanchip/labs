@@ -1,0 +1,31 @@
+Cơ bản:
+
+Giới thiệu nghề Tester và nội dung các buổi học
+Overview Software Testing
+Testing throughout the software lifecycle
+Analyse Requirement
+Static Testing
+Dynamic Testing
+Priority bug, level case
+Làm bài test 1
+Tổng kết lớp học
+
+Nâng cao:
+
+Trách nhiệm: Test Manager, Test leader, Tester
+Testplan
+Testcase
+Test Data & Test Enviroment
+Execute Test
+Log Bug
+Report
+Test tool overview
+Smartphone Testing overview
+Application Testing overview
+Làm bài kiểm tra Advance Software Testing
+Làm bài kiểm tra Advance Software Testing
+Giới thiệu 1 số tool
+Hướng dẫn cài đặt QTP11
+Giới thiệu QTP11
+Thực hành QTP11
+
