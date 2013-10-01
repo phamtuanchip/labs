@@ -1,4 +1,4 @@
-package chat;
+package lab5.chat;
 import javax.microedition.lcdui.ChoiceGroup;
 import javax.microedition.lcdui.Command;
 import javax.microedition.lcdui.CommandListener;

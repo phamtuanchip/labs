@@ -1,4 +1,4 @@
-package chat;
+package lab5.chat;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

@@ -1,4 +1,4 @@
-package chat;
+package lab5.chat;
 
 import javax.microedition.lcdui.Display;
 import javax.microedition.midlet.MIDlet;
