@@ -1,4 +1,6 @@
+ImageName-2: /images/leaf.jpg
 MIDlet-6: HttpMIDle,,lab2.HttpMIDle
+ImageName-1: /images/duke.png
 MIDlet-5: SortMixedRecordDataTypeExample,,lab2.SortMixedRecordDataTypeExample
 MIDlet-4: SortExample,,lab2.SortExample
 MIDlet-3: SearchExample,,lab2.SearchExample
@@ -11,3 +13,4 @@ MIDlet-Name: lab MIDlet Suite
 MIDlet-Vendor: MIDlet Suite Vendor
 MicroEdition-Profile: MIDP-2.1
 MIDlet-7: MIDlet-7,,lab3.AccessUrl
+ImageName-3: /images/leaf.png
