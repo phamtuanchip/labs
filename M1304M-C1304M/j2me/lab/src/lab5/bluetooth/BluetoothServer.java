@@ -1,4 +1,4 @@
-package lab5.chat;
+package lab5.bluetooth;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

@@ -1,4 +1,4 @@
-package lab5.chat;
+package lab5.bluetooth;
 
 import javax.microedition.lcdui.Display;
 import javax.microedition.midlet.MIDlet;
