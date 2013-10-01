@@ -1,10 +1,16 @@
 package exam;
 
-import java.lang.*;
-import java.io.*;
-import java.util.*;
-import javax.microedition.lcdui.*;
-import javax.microedition.midlet.*;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.Gauge;
+import javax.microedition.midlet.MIDlet;
+import javax.microedition.midlet.MIDletStateChangeException;
 public class TimerMIDlet extends MIDlet implements CommandListener {
     // number of elements in gauge
     final private static int GAUGE_MAX = 10;

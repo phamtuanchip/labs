@@ -33,11 +33,25 @@ package lab4.mms;
 
 import java.io.IOException;
 
-import javax.microedition.io.*;
-import javax.microedition.lcdui.*;
-import javax.microedition.midlet.*;
-
-import javax.wireless.messaging.*;
+import javax.microedition.io.Connector;
+import javax.microedition.io.PushRegistry;
+import javax.microedition.lcdui.Alert;
+import javax.microedition.lcdui.AlertType;
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.Image;
+import javax.microedition.lcdui.ImageItem;
+import javax.microedition.lcdui.Item;
+import javax.microedition.lcdui.StringItem;
+import javax.microedition.midlet.MIDlet;
+import javax.wireless.messaging.Message;
+import javax.wireless.messaging.MessageConnection;
+import javax.wireless.messaging.MessageListener;
+import javax.wireless.messaging.MessagePart;
+import javax.wireless.messaging.MultipartMessage;
 
 
 /**

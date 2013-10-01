@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ImageName-1: /images/duke.png
 ImageName-2: /images/leaf.jpg
 ImageName-3: /images/leaf.png
+=======
+CBS-Message-Identifier: 50001
+>>>>>>> ca73b060139175644bc412dbbedee4dfe6315e9c
 MIDlet-1: ReadWrite,,lab2.ReadWrite
 MIDlet-2: ReadWriteStreams,,lab2.ReadWriteStreams
 MIDlet-3: SearchExample,,lab2.SearchExample
@@ -8,10 +12,16 @@ MIDlet-4: SortExample,,lab2.SortExample
 MIDlet-5: SortMixedRecordDataTypeExample,,lab2.SortMixedRecordDataTypeExample
 MIDlet-6: HttpMIDle,,lab2.HttpMIDle
 MIDlet-7: MIDlet-7,,lab3.AccessUrl
+<<<<<<< HEAD
 MIDlet-Jar-Size: 192785
+=======
+MIDlet-Jar-Size: 62086
+>>>>>>> ca73b060139175644bc412dbbedee4dfe6315e9c
 MIDlet-Jar-URL: lab.jar
 MIDlet-Name: lab MIDlet Suite
 MIDlet-Vendor: MIDlet Suite Vendor
 MIDlet-Version: 1.0.0
+MMS-ApplicationID: example.mms.MMSDemo
 MicroEdition-Configuration: CLDC-1.1
 MicroEdition-Profile: MIDP-2.1
+SMS-Port: 50000
