@@ -1,4 +1,4 @@
-package lab5;
+package exam;
 
 import java.util.Timer;
 import java.util.TimerTask;

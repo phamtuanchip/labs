@@ -1,4 +1,7 @@
 CBS-Message-Identifier: 50001
+ImageName-1: /images/duke.png
+ImageName-2: /images/leaf.jpg
+ImageName-3: /images/leaf.png
 MIDlet-1: ReadWrite,,lab2.ReadWrite
 MIDlet-2: ReadWriteStreams,,lab2.ReadWriteStreams
 MIDlet-3: SearchExample,,lab2.SearchExample
@@ -6,7 +9,7 @@ MIDlet-4: SortExample,,lab2.SortExample
 MIDlet-5: SortMixedRecordDataTypeExample,,lab2.SortMixedRecordDataTypeExample
 MIDlet-6: HttpMIDle,,lab2.HttpMIDle
 MIDlet-7: MIDlet-7,,lab3.AccessUrl
-MIDlet-Jar-Size: 62086
+MIDlet-Jar-Size: 721309
 MIDlet-Jar-URL: lab.jar
 MIDlet-Name: lab MIDlet Suite
 MIDlet-Vendor: MIDlet Suite Vendor
