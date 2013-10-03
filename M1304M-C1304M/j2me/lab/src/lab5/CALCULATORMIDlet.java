@@ -1,5 +1,13 @@
+package lab5;
+
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.TextField;
 import javax.microedition.midlet.MIDlet;
-import javax.microedition.lcdui.*;
+import javax.microedition.midlet.MIDletStateChangeException;
 
 public class CALCULATORMIDlet extends MIDlet implements CommandListener, ActionListener{
   private Display display;
@@ -8,7 +16,7 @@ public class CALCULATORMIDlet extends MIDlet implements CommandListener, ActionL
   private Command enter,back;
   
 
- public LoginExample() {
+ public CALCULATORMIDlet() {
   form = new Form("Sign in");
   userName = new TextField("enter numbers:", "", 30, TextField.ANY);
   password = new TextField("Result:", "", 30, TextField.result);
@@ -119,4 +127,20 @@ public class CALCULATORMIDlet extends MIDlet implements CommandListener, ActionL
       else
       result.setText(result.getText()+no);
      }
+	public void commandAction(Command arg0, Displayable arg1) {
+		// TODO Auto-generated method stub
+		
+	}
+	protected void destroyApp(boolean arg0) throws MIDletStateChangeException {
+		// TODO Auto-generated method stub
+		
+	}
+	protected void pauseApp() {
+		// TODO Auto-generated method stub
+		
+	}
+	protected void startApp() throws MIDletStateChangeException {
+		// TODO Auto-generated method stub
+		
+	}
  }
