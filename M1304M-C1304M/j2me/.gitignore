@@ -14,5 +14,5 @@ logs
 results
 
 npm-debug.log
-*.tmp
+*.mtj.tmp
 bin
