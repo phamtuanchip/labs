@@ -1,10 +1,19 @@
 package lab8;
-import java.io.*;
-import java.util.*;
-import javax.microedition.lcdui.*;
-import javax.microedition.midlet.*;
-import javax.microedition.media.*;
-import javax.microedition.media.control.*;
+import java.util.Enumeration;
+import java.util.Hashtable;
+
+import javax.microedition.lcdui.Command;
+import javax.microedition.lcdui.CommandListener;
+import javax.microedition.lcdui.Display;
+import javax.microedition.lcdui.Displayable;
+import javax.microedition.lcdui.Form;
+import javax.microedition.lcdui.Item;
+import javax.microedition.lcdui.List;
+import javax.microedition.media.Manager;
+import javax.microedition.media.Player;
+import javax.microedition.media.PlayerListener;
+import javax.microedition.media.control.VideoControl;
+import javax.microedition.midlet.MIDlet;
 
 public class VideoPlayer extends MIDlet implements CommandListener, PlayerListener {	
 	private Display display;
@@ -29,7 +38,7 @@ public class VideoPlayer extends MIDlet implements CommandListener, PlayerListen
 
 		items.put("SpringWaterFall...", "file://SpringWaterFall.mpg");
 		itemsInfo.put("SpringWaterFall...", "video/mpeg");
-		
+
 		items.put("helloboy...", "file://helloboy.mpg");
 		itemsInfo.put("helloboy...", "video/mpeg");
 
@@ -41,7 +50,7 @@ public class VideoPlayer extends MIDlet implements CommandListener, PlayerListen
 
 		items.put("pythag1...", "file://pythag1.mpg");
 		itemsInfo.put("pythag1...", "video/mpeg");
-		
+
 		items.put("CarelessEnglish...", "file://CarelessEnglish.mpg");
 		itemsInfo.put("CarelessEnglish...", "video/mpeg");
 	}

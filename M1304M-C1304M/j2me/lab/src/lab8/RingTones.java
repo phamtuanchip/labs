@@ -13,8 +13,8 @@ public class RingTones extends MIDlet implements ItemStateListener, CommandListe
 
 	public void startApp(){
 		try {
-			player1 = Manager.createPlayer(getClass().getResourceAsStream("/kabhi-alvida-na-kehna.wav"), "audio/x-wav");
-			player2 = Manager.createPlayer(getClass().getResourceAsStream("/aagepiche.wav"), "audio/x-wav");
+			player1 = Manager.createPlayer(getClass().getResourceAsStream("/bark.wav"), "audio/x-wav");
+			player2 = Manager.createPlayer(getClass().getResourceAsStream("/bong.wav"), "audio/x-wav");
 		} catch(MediaException e) {
 			e.printStackTrace();
 		}catch(IOException ioe){
@@ -22,8 +22,8 @@ public class RingTones extends MIDlet implements ItemStateListener, CommandListe
 		}
 		display = Display.getDisplay(this);
 		choice = new ChoiceGroup("List of RingTones", Choice.EXCLUSIVE);
-		choice.append("Kabhi Alvida Na Kehna", null);    
-		choice.append("Golmaal Return", null);    
+		choice.append("Bark", null);    
+		choice.append("Bong", null);    
 		exit = new Command("Exit", Command.EXIT, 1);
 		form = new Form("Playing song");
 		form.append(choice);

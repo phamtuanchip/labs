@@ -1,4 +1,4 @@
-package com.j2me.part4;
+package lab8;
 
 import java.util.Hashtable;
 import java.util.Enumeration;
@@ -18,7 +18,7 @@ import javax.microedition.media.Manager;
 import javax.microedition.media.PlayerListener;
 import javax.microedition.media.control.VideoControl;
 
-public class MediaMIDlet extends MIDlet
+public class MediaMIDlet2 extends MIDlet
   implements CommandListener, PlayerListener {
 
 	private Display display;
@@ -34,7 +34,7 @@ public class MediaMIDlet extends MIDlet
 
 	private Player player;
 
-	public MediaMIDlet() {
+	public MediaMIDlet2() {
 
 	  display = Display.getDisplay(this);
 

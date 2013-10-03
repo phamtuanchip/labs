@@ -1,4 +1,4 @@
-package com.j2me.part4;
+package lab8;
 
 import java.util.Hashtable;
 import java.util.Enumeration;
