@@ -12,6 +12,7 @@ public class ExampleGameSpriteMidlet extends MIDlet {
       gameCanvas.start();
       display.setCurrent(gameCanvas);
     } catch (Exception ex) {
+    	ex.printStackTrace();
       System.out.println(ex);
     }  
   }

@@ -66,7 +66,7 @@ public class ExampleTiledLayerCanvas extends GameCanvas implements Runnable {
   }
 
   private TiledLayer initBackground() throws Exception {
-    Image tileImages = Image.createImage("/tiles.png");
+    Image tileImages = Image.createImage("/tiles1.png");
     TiledLayer tiledLayer = new TiledLayer(10,10,tileImages,32,32);
 
     int[] map = {
